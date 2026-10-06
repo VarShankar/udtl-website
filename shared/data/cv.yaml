@@ -50,6 +50,8 @@ talks:
   - {title: "KernelPack: A C/C++ library for high-order RBF-FD methods and automatic node generation", where: "ICERM Workshop, Brown University", when: "Aug 2017", invited: true}
 
 teaching:
+  - {code: "CS 3200", name: "Introduction to Scientific and Data Computing", when: "Fall 2026 (current)"}
+  - {code: "CS 3200", name: "Introduction to Scientific and Data Computing", when: "Spring 2026"}
   - {code: "CS 4150", name: "Algorithms", when: "Fall 2025"}
   - {code: "CS 6220 / COMP 5960", name: "Advanced Scientific and Data Computing II", when: "Spring 2024"}
   - {code: "CS 4530", name: "Mobile Application Programming", when: "2022 – 2024"}
