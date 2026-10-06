@@ -105,6 +105,11 @@ def build(site):
         trim_blocks=True, lstrip_blocks=True,
     )
     env.filters["initials"] = initials
+    def nicedate(v):
+        v = str(v)
+        m = re.match(r"(\d{4})-(\d{2})", v)
+        return datetime.date(int(m[1]), int(m[2]), 1).strftime("%b %Y") if m else v
+    env.filters["nicedate"] = nicedate
     # an image reference is only emitted if the file is actually present
     env.filters["exists"] = lambda rel: bool(rel) and ((src / "static" / rel).exists() or (SHARED / "static" / rel).exists())
     env.globals.update(site=cfg, d=data(), tag_labels=TAG_LABELS,
