@@ -256,3 +256,29 @@ a.card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var
   .hero-personal .portrait { order: -1; width: min(55%, 210px); justify-self: start; }
   .hero-personal .portrait::after { inset: auto -8px -8px auto; }
 }
+
+/* ---------- fixes (Oct 2026) ---------- */
+/* grid/flex children must be allowed to shrink, or wide math/long words blow out the column */
+.split > *, .grid > *, .thrust .math { min-width: 0; }
+/* timeline rows without a date span the full width */
+.tl li > span:only-child { grid-column: 1 / -1; }
+/* contact list: label column + free-flowing text (no flex splitting of inline links) */
+.contact-list li { display: grid; grid-template-columns: 4.5rem 1fr; gap: .6rem; align-items: baseline; }
+.contact-list li > span:first-child { min-width: 0; }
+/* publication chips wrap on wider screens instead of hiding off-edge */
+@media (min-width: 720px) { .chips { flex-wrap: wrap; overflow: visible; } }
+/* eyebrow: keep phrases together */
+.eyebrow { text-wrap: balance; }
+/* lab home: director block */
+.director { border-top: 1px solid var(--line); }
+.director-card { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.director-photo { display: block; width: min(100%, 260px); aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 1px solid var(--line); background: var(--accent-soft); box-shadow: 0 0 0 8px var(--paper), 0 0 0 9px color-mix(in srgb, var(--accent) 40%, var(--line)); display: grid; place-items: center; }
+.director-photo img { width: 100%; height: 100%; object-fit: cover; }
+.director-photo span { font: 500 3rem/1 var(--serif); color: var(--accent); }
+.director-card h2 { font-size: var(--step-3); margin-bottom: .4rem; }
+.director-card .lede-sm { color: var(--ink-2); max-width: 60ch; font-size: var(--step-0); }
+@media (min-width: 760px) { .director-card { grid-template-columns: 260px 1fr; } }
+@media (max-width: 759px) { .director-photo { width: 180px; } }
+/* keep scroll-reveal subtle so content never looks missing */
+.js .reveal { opacity: 1; transform: translateY(8px); }
+.js .reveal.in { transform: none; }
