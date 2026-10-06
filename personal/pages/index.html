@@ -18,9 +18,9 @@
         <a class="btn" href="{{ site.scholar }}">Google Scholar</a>
       </div>
       <ul class="contact-list">
-        <li><span>Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <li><span>Office</span>{{ site.office }}</li>
-        <li><span>Students</span>{% if site.recruiting %}I am taking on new students, and current University of Utah students are especially welcome to reach out. See the <a href="{{ site.lab_url }}join.html">lab's Join page</a>.{% else %}I am not recruiting new PhD students at this time.{% endif %}</li>
+        <li><span>Email</span><span><a href="mailto:{{ site.email }}">{{ site.email }}</a></span></li>
+        <li><span>Office</span><span>{{ site.office }}</span></li>
+        <li><span>Students</span><span>{% if site.recruiting %}I am taking on new students, and current University of Utah students are especially welcome to reach out. See the <a href="{{ site.lab_url }}join.html">lab's Join page</a>.{% else %}I am not recruiting new PhD students at this time.{% endif %}</span></li>
       </ul>
     </div>
     <div class="portrait">
@@ -56,7 +56,7 @@
       <div class="section-head"><h2>News</h2></div>
       <ul class="tl news">
       {% for n in d.cv.news %}{% if loop.index <= 6 %}
-        <li><span class="when">{{ n.date }}</span><span>{{ n.text | safe }}</span></li>
+        <li><span class="when">{{ n.date | nicedate }}</span><span>{{ n.text | safe }}</span></li>
       {% endif %}{% endfor %}
       </ul>
     </div>
