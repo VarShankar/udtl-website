@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block content %}
+<section class="hero-personal">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Scientific machine learning · Numerical methods · HPC</span>
+      <h1>Varun Shankar</h1>
+      <p class="role">Assistant Professor, Kahlert School of Computing, University of Utah. Director of the <a href="{{ site.lab_url }}">Utah Digital Twin Lab</a>.</p>
+      <div class="prose">
+        <p>I build <strong>efficient, scalable, and provably-accurate machine learning models for scientific applications</strong>. My work sits where scientific machine learning meets scientific computing and high performance computing: neural and kernel operators for surrogate modeling, learning architectures that preserve physical structure by construction, and high-order kernel and meshless methods for PDEs on complicated and moving geometries.</p>
+        <p>I joined the faculty on the tenure track in July 2023. Before that I was an Assistant Professor (Lecturer) in the Kahlert School of Computing (2018–2023), where I helped build and later co-direct the Master of Software Development program. I received my PhD in Computing (Scientific Computing) from the University of Utah and did a four-year postdoc in the Math Biology group in Utah's Department of Mathematics.</p>
+      </div>
+      <div class="btn-row" style="margin-top:1.4rem">
+        <a class="btn primary" href="research.html">Research</a>
+        <a class="btn" href="publications.html">Publications</a>
+        <a class="btn" href="{{ site.cv_pdf }}">CV (PDF)</a>
+        <a class="btn" href="{{ site.scholar }}">Google Scholar</a>
+      </div>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><span>Office</span>{{ site.office }}</li>
+        <li><span>Students</span>{% if site.recruiting %}I am taking on new students, and current University of Utah students are especially welcome to reach out. See the <a href="{{ site.lab_url }}join.html">lab's Join page</a>.{% else %}I am not recruiting new PhD students at this time.{% endif %}</li>
+      </ul>
+    </div>
+    <div class="portrait">
+      <div class="frame">{% if site.photo | exists %}<img src="{{ site.photo }}" alt="Portrait of Varun Shankar">{% else %}<span class="initials">VS</span>{% endif %}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="section-head"><h2>Research areas</h2><a href="research.html">Details →</a></div>
+    <div class="grid" style="--min:240px">
+      {% for t in d.research.thrusts %}
+      <a class="card thrust-card reveal" href="research.html#{{ t.id }}">
+        <span class="num">0{{ loop.index }}</span>
+        <h3>{{ t.title }}</h3>
+        <p class="muted">{{ t.short }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <div class="section-head"><h2>Recent papers</h2><a href="publications.html">All {{ d.publications.publications | length }} →</a></div>
+      <ol class="pubs">
+      {% for p in d.publications.publications if p.status == 'published' %}{% if loop.index <= 5 %}{{ m.pub_item(p) }}{% endif %}{% endfor %}
+      </ol>
+    </div>
+    <div>
+      <div class="section-head"><h2>News</h2></div>
+      <ul class="tl news">
+      {% for n in d.cv.news %}{% if loop.index <= 6 %}
+        <li><span class="when">{{ n.date }}</span><span>{{ n.text | safe }}</span></li>
+      {% endif %}{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

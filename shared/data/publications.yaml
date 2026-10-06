@@ -1,0 +1,614 @@
+group_members:
+- Ramansh Sharma
+- Alberto Cattaneo
+- Matthew Lowery
+- Branden Frieden
+- Andrey Pluzhnik
+- Madison Cooley
+- Milena Belianovich
+- Andrew Kassen
+- Hallie Elich
+- Andrew M. Jones
+- Vidhi Zala
+- Roman Amici
+publications:
+- title: The Frame Kernel Method for Multiscale Operator Learning
+  authors:
+  - Branden Frieden
+  - Ryan Whitehead
+  - Keith Ballard
+  - Robert M. Kirby
+  - Varun Shankar
+  venue: In review
+  year: 2026
+  status: review
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: '2608.25084'
+  url: null
+- title: A high-order, meshless, Lagrangian–Eulerian RBF-FD method for advection–diffusion–reaction on moving manifolds
+  authors:
+  - Matthew Lowery
+  - Grady B. Wright
+  - Varun Shankar
+  venue: In review
+  year: 2026
+  status: review
+  tags:
+  - meshless
+  doi: null
+  arxiv: '2608.19384'
+  url: null
+- title: Neural Operators for Design-Space Surrogate Modeling of Tendon-Actuated Continuum Robots
+  authors:
+  - Branden Frieden
+  - James M Ferguson
+  - Alan Kuntz
+  - Varun Shankar
+  venue: IEEE International Conference on Robotics and Automation, ICRA
+  year: 2026
+  status: published
+  tags:
+  - operator-learning
+  - mechanics
+  doi: null
+  arxiv: '2605.19104'
+  url: null
+- title: Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning
+  authors:
+  - Matthew Lowery
+  - John Turnage
+  - Zachary Morrow
+  - John D Jakeman
+  - Akil Narayan
+  - Shandian Zhe
+  - Varun Shankar
+  venue: Transactions on Machine Learning Research
+  year: 2026
+  status: published
+  tags:
+  - operator-learning
+  - hpc
+  doi: null
+  arxiv: '2407.00809'
+  url: https://openreview.net/forum?id=Q0C4jYZQ7x
+- title: Polynomial-Augmented Neural Networks (PANNs) with Weak Orthogonality Constraints for Enhanced Function and PDE Approximation
+  authors:
+  - Madison Cooley
+  - Shandian Zhe
+  - Robert M Kirby
+  - Varun Shankar
+  venue: SIAM Journal on Scientific Computing
+  year: 2026
+  status: published
+  tags:
+  - physics-informed
+  doi: 10.1137/25m1773556
+  arxiv: '2406.02336'
+  url: null
+- title: Localized Operator Learning with Adaptive Partition-of-Unity Mixture-of-Expert Networks
+  authors:
+  - Madison Cooley
+  - Ramansh Sharma
+  - Shandian Zhe
+  - Robert M. Kirby
+  - Varun Shankar
+  venue: In review
+  year: 2026
+  status: review
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: null
+  url: null
+- title: 'Fluids You Can Trust: Property-Preserving Operator Learning for Incompressible Flows'
+  authors:
+  - Ramansh Sharma
+  - Matthew Lowery
+  - Houman Owhadi
+  - Varun Shankar
+  venue: In review
+  year: 2026
+  status: review
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: '2602.15472'
+  url: null
+- title: Deep Gaussian Processes for Functional Maps
+  authors:
+  - Matthew Lowery
+  - Zhitong Xu
+  - Da Long
+  - Keyan Chen
+  - Daniel S. Johnson
+  - Yang Bai
+  - Varun Shankar
+  - Shandian Zhe
+  venue: In review
+  year: 2026
+  status: review
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: '2510.22068'
+  url: null
+- title: 'Blockchain Compliance: A Framework for Evaluating Regulatory Approaches'
+  authors:
+  - Ben Charoenwong
+  - Pratik Soni
+  - Varun Shankar
+  - Robert M. Kirby
+  - Jonathan Reiter
+  venue: In review
+  year: 2025
+  status: review
+  tags:
+  - other
+  doi: null
+  arxiv: null
+  url: https://papers.ssrn.com/abstract=5368708
+- title: An Optimal Weighted Least-Squares Method for Operator Learning
+  authors:
+  - John Turnage
+  - Matthew Lowery
+  - John Jakeman
+  - Zackary Morrow
+  - Akil Narayan
+  - Varun Shankar
+  venue: In review
+  year: 2025
+  status: review
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: '2512.11168'
+  url: null
+- title: A Unified Framework for Efficient Kernel and Polynomial Interpolation
+  authors:
+  - Milena Belianovich
+  - Gregory E. Fasshauer
+  - Akil Narayan
+  - Varun Shankar
+  venue: Journal of Approximation Software
+  year: 2026
+  status: published
+  tags:
+  - meshless
+  doi: 10.13135/3103-1935/12288
+  arxiv: '2507.12629'
+  url: https://ojs.unito.it/index.php/JAS/article/view/12288
+- title: Rootfinding and Optimization Techniques for Solving Nonlinear Systems of Equations Arising from Cohesive Zone Models
+  authors:
+  - Alberto Cattaneo
+  - Varun Shankar
+  - Michael Ballard
+  venue: AIAA SciTech 2025 Forum
+  year: 2025
+  status: published
+  tags:
+  - mechanics
+  doi: null
+  arxiv: '2502.19583'
+  url: null
+- title: Ensemble and Mixture-of-Experts DeepONets For Operator Learning
+  authors:
+  - Ramansh Sharma
+  - Varun Shankar
+  venue: Transactions on Machine Learning Research
+  year: 2025
+  status: published
+  tags:
+  - operator-learning
+  doi: null
+  arxiv: '2405.11907'
+  url: https://openreview.net/forum?id=MGdydNfWzQ
+- title: 'HyResPINNs: A Hybrid Residual Physics-Informed Neural Network Architecture Designed to Balance Expressiveness and Trainability'
+  authors:
+  - Madison Cooley
+  - Robert M. Kirby
+  - Shandian Zhe
+  - Varun Shankar
+  venue: Transactions on Machine Learning Research
+  year: 2025
+  status: published
+  tags:
+  - physics-informed
+  doi: null
+  arxiv: '2410.03573'
+  url: https://openreview.net/forum?id=et9WkjkqAw
+- title: 'Fourier PINNs: From Strong Boundary Conditions to Adaptive Fourier Bases'
+  authors:
+  - Madison Cooley
+  - Varun Shankar
+  - Robert M. Kirby
+  - Shandian Zhe
+  venue: Transactions on Machine Learning Research
+  year: 2024
+  status: published
+  tags:
+  - physics-informed
+  doi: null
+  arxiv: '2410.03496'
+  url: https://openreview.net/forum?id=KqRnsEMYLx
+- title: Discretization of non-uniform rational B-spline (NURBS) models for meshless isogeometric analysis
+  authors:
+  - Urban Duh
+  - Varun Shankar
+  - Gregor Kosec
+  venue: Journal of Scientific Computing
+  year: 2024
+  status: published
+  tags:
+  - meshless
+  doi: 10.1007/s10915-024-02597-z
+  arxiv: null
+  url: null
+- title: Locally Adaptive and Differentiable Regression
+  authors:
+  - Mingxuan Han
+  - Chenglong Ye
+  - Varun Shankar
+  - Jeff Phillips
+  venue: Journal of Machine Learning for Modeling and Computing
+  year: 2023
+  status: published
+  tags:
+  - other
+  doi: 10.1615/jmachlearnmodelcomput.2023049746
+  arxiv: '2308.07418'
+  url: null
+- title: 'MGM: A meshfree geometric multilevel method for systems arising from elliptic equations on point cloud surfaces'
+  authors:
+  - Grady B. Wright
+  - Andrew M. Jones
+  - Varun Shankar
+  venue: SIAM Journal on Scientific Computing
+  year: 2023
+  status: published
+  tags:
+  - meshless
+  doi: 10.1137/22M1490338
+  arxiv: '2204.06154'
+  url: null
+- title: Accelerated training of physics-informed neural networks (PINNs) using Meshless Discretizations
+  authors:
+  - Ramansh Sharma
+  - Varun Shankar
+  venue: NeurIPS
+  year: 2022
+  status: published
+  tags:
+  - physics-informed
+  - meshless
+  doi: 10.52202/068431-0076
+  arxiv: '2205.09332'
+  url: https://papers.nips.cc/paper_files/paper/2022/hash/0764db1151b936aca59249e2c1386101-Abstract-Conference.html
+- title: Remaining Challenges in the Application of High-Performance Computing to a Process-To-Performance Pipeline for Textile Composites
+  authors:
+  - Keith M. Ballard
+  - Endel Iarve
+  - John Whitcomb
+  - Varun Shankar
+  - Hari Sundar
+  - Lauren Ferguson
+  - Robert M. Kirby
+  - David Mollenhauer
+  venue: Proceedings of the American Society for Composites-Thirty-Seventh Technical Conference
+  year: 2022
+  status: published
+  tags:
+  - mechanics
+  - hpc
+  doi: 10.12783/asc37/36485
+  arxiv: null
+  url: https://dpi-proceedings.com/index.php/asc37/article/view/36485
+- title: Immersed boundary simulations of cell-cell interactions in whole blood
+  authors:
+  - Andrew Kassen
+  - Aaron Barrett
+  - Varun Shankar
+  - Aaron L. Fogelson
+  venue: Journal of Computational Physics
+  year: 2022
+  status: published
+  tags:
+  - biomechanics
+  doi: 10.1016/j.jcp.2022.111499
+  arxiv: '2108.09396'
+  url: null
+- title: A fine-grained parallelization of the Immersed Boundary method
+  authors:
+  - Andrew Kassen
+  - Varun Shankar
+  - Aaron L. Fogelson
+  venue: International Journal of High Performance Computing Applications
+  year: 2022
+  status: published
+  tags:
+  - biomechanics
+  - hpc
+  doi: 10.1177/10943420221083572
+  arxiv: '2012.06646'
+  url: null
+- title: Towards an Extrinsic, CG-XFEM approach based on hierarchical enrichments for modeling progressive fracture
+  authors:
+  - Keith M. Ballard
+  - Roman Amici
+  - Varun Shankar
+  - Lauren A. Ferguson
+  - M. Braginsky
+  - Robert M. Kirby
+  venue: Computer Methods in Applied Mechanics and Engineering
+  year: 2022
+  status: published
+  tags:
+  - mechanics
+  doi: 10.1016/j.cma.2021.114221
+  arxiv: '2104.14704'
+  url: null
+- title: An efficient high-order meshless method for advection-diffusion equations on time-varying irregular domains
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Aaron Fogelson
+  venue: Journal of Computational Physics
+  year: 2021
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.jcp.2021.110633
+  arxiv: '2011.06715'
+  url: null
+- title: Pump efficacy in a two-dimensional, fluid-structure-interaction model of a chain of contracting lymphangions
+  authors:
+  - Hallie Elich
+  - Aaron Barrett
+  - Varun Shankar
+  - Aaron L. Fogelson
+  venue: Biomechanics and Modeling in Mechanobiology
+  year: 2021
+  status: published
+  tags:
+  - biomechanics
+  doi: 10.1007/s10237-021-01486-w
+  arxiv: '2012.05377'
+  url: null
+- title: A Robust Hyperviscosity Formulation for Stable RBF-FD Discretizations of Advection-Diffusion-Reaction Equations on Manifolds
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Akil Narayan
+  venue: SIAM Journal on Scientific Computing
+  year: 2020
+  status: published
+  tags:
+  - meshless
+  doi: 10.1137/19M1288747
+  arxiv: '1910.07059'
+  url: null
+- title: Asymptotic and numerical analysis of a stochastic PDE model of volume transmission
+  authors:
+  - Sean Lawley
+  - Varun Shankar
+  venue: SIAM Multiscale Modeling and Simulation
+  year: 2020
+  status: published
+  tags:
+  - biomechanics
+  doi: 10.1137/18M1230773
+  arxiv: '1812.11680'
+  url: null
+- title: A preliminary assessment of a new XFEM framework for predicting complex fracture
+  authors:
+  - Keith M. Ballard
+  - Roman Amici
+  - Varun Shankar
+  - Robert M. Kirby
+  venue: 22nd International Conference on Composite Materials (ICCM22)
+  year: 2019
+  status: published
+  tags:
+  - mechanics
+  doi: null
+  arxiv: null
+  url: null
+- title: Hyperviscosity-based Stabilization for Radial Basis Function-Finite Difference (RBF-FD) discretizations of advection-diffusion equations
+  authors:
+  - Varun Shankar
+  - Aaron L. Fogelson
+  venue: Journal of Computational Physics
+  year: 2018
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.jcp.2018.06.036
+  arxiv: '1806.03798'
+  url: null
+- title: 'RBF-LOI: Augmenting Radial Basis Functions (RBFs) with Least Orthogonal Interpolants (LOI) for Solving PDEs on Surfaces'
+  authors:
+  - Varun Shankar
+  - Akil Narayan
+  - Robert M. Kirby
+  venue: Journal of Computational Physics
+  year: 2018
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.jcp.2018.07.015
+  arxiv: '1807.02775'
+  url: null
+- title: Robust Node Generation for Meshfree Discretizations on Irregular Domains and Surfaces
+  authors:
+  - Varun Shankar
+  - Aaron L. Fogelson
+  - Robert M. Kirby
+  venue: SIAM Journal on Scientific Computing
+  year: 2018
+  status: published
+  tags:
+  - meshless
+  doi: 10.1137/17m114090x
+  arxiv: '1806.02972'
+  url: null
+- title: Mesh-free Semi-Lagrangian Methods for Advection on a Sphere using Radial Basis Functions
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  venue: Journal of Computational Physics
+  year: 2018
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.jcp.2018.04.007
+  arxiv: '1804.01609'
+  url: null
+- title: 3-D FDTD Modeling of Electromagnetic Wave Propagation in Magnetized Plasma Requiring Singular Updates to the Current Density Equation
+  authors:
+  - Santosh Pokhrel
+  - Varun Shankar
+  - Jamesina J. Simpson
+  venue: IEEE Transactions on Antennas and Propagation
+  year: 2018
+  status: published
+  tags:
+  - other
+  doi: 10.1109/tap.2018.2847601
+  arxiv: null
+  url: null
+- title: Curvilinear Mesh Rectification using Radial Basis Function Interpolation and Smoothing
+  authors:
+  - Vidhi Zala
+  - Varun Shankar
+  - Shankar P. Sastry
+  - Robert M. Kirby
+  venue: Journal of Scientific Computing
+  year: 2018
+  status: published
+  tags:
+  - meshless
+  doi: 10.1007/s10915-018-0711-0
+  arxiv: '1804.03358'
+  url: null
+- title: Simplified FDTD model of electromagnetic wave propagation in magnetized plasma
+  authors:
+  - Santosh Pokhrel
+  - Varun Shankar
+  - Jamesina J. Simpson
+  venue: Applied Computational Electromagnetic Society Symposium [ACES]
+  year: 2018
+  status: published
+  tags:
+  - other
+  doi: 10.23919/ropaces.2018.8364240
+  arxiv: null
+  url: null
+- title: 'The Overlapped Radial Basis Function-Finite Difference (RBF-FD) Method: A Generalization of RBF-FD'
+  authors:
+  - Varun Shankar
+  venue: Journal of Computational Physics
+  year: 2017
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.jcp.2017.04.037
+  arxiv: '1606.03135'
+  url: null
+- title: A Radial Basis Function (RBF)-Based Compact Finite Difference (FD) Scheme for Reaction-Diffusion Equations on Surfaces
+  authors:
+  - E. Lehto
+  - Varun Shankar
+  - Grady B. Wright
+  venue: SIAM Journal on Scientific Computing
+  year: 2017
+  status: published
+  tags:
+  - meshless
+  doi: 10.1137/16m1095457
+  arxiv: null
+  url: null
+- title: A High-Order Radial Basis Function (RBF)-Based Leray Projection Method for the Incompressible Stokes Equations
+  authors:
+  - Edward J. Fuselier
+  - Varun Shankar
+  - Grady B. Wright
+  venue: Computers and Fluids
+  year: 2016
+  status: published
+  tags:
+  - meshless
+  doi: 10.1016/j.compfluid.2016.01.009
+  arxiv: '1509.05669'
+  url: null
+- title: Augmenting the Immersed Boundary Method with Radial Basis Functions (RBFs) for the modeling of platelets in hemodynamic flows
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Robert M. Kirby
+  - Aaron L. Fogelson
+  venue: Int. J. Numer. Meth. Fluids
+  year: 2015
+  status: published
+  tags:
+  - meshless
+  - biomechanics
+  doi: 10.1002/fld.4061
+  arxiv: '1304.7479'
+  url: null
+- title: Radial Basis Function (RBF)-Based Parametric Models for Open and Closed Curves within the Method of Regularized Stokeslets
+  authors:
+  - Varun Shankar
+  - Sarah D. Olson
+  venue: Int. J. Numer. Meth. Fluids
+  year: 2015
+  status: published
+  tags:
+  - meshless
+  - biomechanics
+  doi: 10.1002/fld.4048
+  arxiv: '1503.00034'
+  url: null
+- title: A Radial Basis Function (RBF)-Finite Difference Method for Diffusion and Reaction-Diffusion Equations on surfaces
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Robert M. Kirby
+  - Aaron L. Fogelson
+  venue: Journal of Scientific Computing
+  year: 2014
+  status: published
+  tags:
+  - meshless
+  doi: 10.1007/s10915-014-9914-1
+  arxiv: '1404.0812'
+  url: null
+- title: A Radial Basis Function (RBF)-Finite Difference Method for the Simulation of Reaction-Diffusion Equations on Stationary Platelets within the Augmented Forcing Method
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Aaron L. Fogelson
+  - Robert M. Kirby
+  venue: Int. J. Numer. Meth. Fluids
+  year: 2014
+  status: published
+  tags:
+  - meshless
+  - biomechanics
+  doi: 10.1002/fld.3880
+  arxiv: '1310.5207'
+  url: null
+- title: A study of different modeling choices for simulating platelets within the immersed boundary method
+  authors:
+  - Varun Shankar
+  - Grady B. Wright
+  - Aaron L. Fogelson
+  - Robert M. Kirby
+  venue: Applied Numerical Mathematics
+  year: 2013
+  status: published
+  tags:
+  - biomechanics
+  doi: 10.1016/j.apnum.2012.09.006
+  arxiv: '1210.1885'
+  url: null

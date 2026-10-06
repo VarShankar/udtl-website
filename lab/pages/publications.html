@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Publications — Utah Digital Twin Lab{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Publications</span>
+    <h1>Papers and preprints</h1>
+    <p class="lede">Filter by thrust or search by keyword. Links go to arXiv, DOI, or OpenReview where available.</p>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom:4rem">
+  {{ m.pub_browser(d) }}
+</section>
+{% endblock %}

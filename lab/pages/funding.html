@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Funding — Utah Digital Twin Lab{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Funding</span>
+    <h1>Active research support</h1>
+    <p class="lede">The lab's work is supported by {{ d.active_grants | length }} active awards from {{ d.active_sponsors[:-1] | join(', ') }}, and {{ d.active_sponsors[-1] }}. We gratefully acknowledge our sponsors.</p>
+    <div class="sponsor-strip">{% for s in d.active_sponsors %}<span>{{ s }}</span>{% endfor %}</div>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom:3rem">
+  {% for t in d.research.thrusts if t.grants %}
+  <div style="margin-top:2.5rem">
+    <div class="section-head"><h2 style="font-size:var(--step-1);font-family:var(--sans);font-weight:600">{{ t.title }}</h2><a href="research.html#{{ t.id }}">The research →</a></div>
+    <div class="grid" style="--min:300px">{% for g in t.grants %}{{ m.grant_card(g, d.grants.show_amounts) }}{% endfor %}</div>
+  </div>
+  {% endfor %}
+  <p class="legend" style="margin-top:1.5rem">Bars show how far through its award period each grant is, measured on the day you view this page.</p>
+</section>
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <h2 style="font-size:var(--step-2)">Past support</h2>
+    <ul class="tl">{% for g in d.past_grants %}<li><span class="when">{{ g.start }} – {{ g.end }}</span><span><b>{{ g.sponsor }}</b> · {% if g.url %}<a href="{{ g.url }}">{{ g.title }}</a>{% else %}{{ g.title }}{% endif %} <span class="muted">({{ g.role }})</span></span></li>{% endfor %}</ul>
+  </div>
+</section>
+{% endblock %}

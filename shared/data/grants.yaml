@@ -1,0 +1,107 @@
+# Research funding. Source: CV (Grants table) + NSF award search (nsf.gov/awardsearch).
+# status: active | completed.  Only "active" grants appear on the lab Funding page;
+# completed ones appear in the "Past support" list.
+# show_amounts controls whether dollar figures are rendered anywhere on the sites.
+show_amounts: false
+
+grants:
+  - sponsor: NSF + DOE
+    sponsors: [NSF, DOE]
+    program: CS2 — Correctness for Scientific Computing Systems (joint NSF/DOE)
+    title: "Collaborative Research: CS2: On-Demand Semantic Analysis via Program Synthesis"
+    award: "2546821"
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2546821
+    role: Co-PI
+    team: "PI Ben Greenman; Co-PIs John Regehr, Varun Shankar"
+    start: 2026
+    end: 2029
+    amount: "$385k NSF + $100k DOE"
+    thrust: trustworthy
+    status: active
+
+  - sponsor: NSF
+    program: DMS / CISE — Computational & Data-Enabled Science (CDS&E)
+    title: "Collaborative Research: Unified Neural Operator (UNO): Towards Trustworthy Operator Learning for Scientific Applications"
+    award: "2505986"
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2505986
+    role: PI
+    team: "PI Varun Shankar; Co-PI Akil Narayan"
+    start: 2025
+    end: 2028
+    amount: "~$450k (collaborative)"
+    thrust: operators
+    status: active
+
+  - sponsor: NSF
+    program: "CISE/CCF — Software & Hardware Foundations (SHF: Medium)"
+    title: "Collaborative Research: SHF: Medium: SCIOPT: Toward Certifiable Compression-Aware SciML Systems"
+    award: "2403379"
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2403379
+    role: Co-PI
+    team: "PI Ganesh Gopalakrishnan; Co-PIs Mary Hall, Varun Shankar"
+    start: 2024
+    end: 2027
+    amount: "$819k"
+    thrust: trustworthy
+    status: active
+
+  - sponsor: AFOSR
+    program: Laboratory Research Initiation Request (LRIR)
+    title: "Property-preserving and multiscale operator learning for surrogate modeling"
+    award: "FA9550-25-1-0042"
+    role: PI
+    start: 2024
+    end: 2027
+    amount: "~$539k"
+    thrust: operators
+    status: active
+    note: "Award no. from paper acknowledgments (arXiv 2608.25084, 2608.19384); title from AFOSR PI-meeting talk"
+
+  - sponsor: AFRL
+    program: "Air Force Research Laboratory (subcontracts via UES and ARCTOS)"
+    title: "Numerical methods and scientific machine learning for composite materials and structures"
+    role: PI
+    start: 2023
+    end: 2027
+    amount: "$500k + $213k"
+    thrust: applications
+    status: active
+    note: "Two AFRL projects (UES subcontract S-200-245-001, 2023-27; ARCTOS, 2025-26) shown as one card, per Varun"
+
+  - sponsor: Sandia
+    program: Laboratory Directed Research & Development (LDRD)
+    title: "Scalable operator learning and surrogate modeling"
+    role: Co-PI
+    start: 2024
+    end: 2027
+    amount: "$300k"
+    thrust: operators
+    status: active
+    note: "Descriptive title (fine per Varun)"
+
+  # ---- completed ----
+  - sponsor: AFRL
+    program: AFRL / NIAR
+    title: "AFRL / NIAR collaborative project"
+    role: Co-PI
+    start: 2022
+    end: 2024
+    status: completed
+  - sponsor: NSF
+    program: "CISE/CCF — Algorithmic Foundations (AF: Small)"
+    title: "AF: Small: Collaborative Research: Scalable, high-order mesh-free algorithms applied to bulk-surface biomechanical problems"
+    award: "1714844"
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1714844
+    role: Utah PI
+    start: 2017
+    end: 2022
+    status: completed
+  - sponsor: NSF
+    program: CDS&E
+    title: "The Best of Both: Toward a hybrid discrete and continuum multiscale platelet aggregation and coagulation model"
+    award: "1521748"
+    url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1521748
+    role: Co-PI
+    start: 2015
+    end: 2019
+    status: completed

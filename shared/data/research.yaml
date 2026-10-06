@@ -1,0 +1,102 @@
+# Research thrusts, shared by both sites. Math is KaTeX: $...$ inline, $$...$$ display.
+# `papers` are case-insensitive title prefixes matched against publications.yaml.
+# `thrust` ids are referenced by grants.yaml.
+thrusts:
+  - id: operators
+    tag: operator-learning
+    title: Operator Learning & Surrogate Modeling
+    short: Fast, accurate surrogates that map inputs, geometries, and parameters directly to PDE solutions.
+    body: >-
+      A digital twin must answer "what if?" questions far faster than a full simulation. We build
+      neural and kernel <em>operators</em> that learn solution maps between function spaces
+      from simulation and experimental data, and we design them to be memory-efficient,
+      geometry-flexible, and multiscale.
+    math: |-
+      $$\mathcal{G}^\dagger:\ \mathcal{U}\to\mathcal{V},\qquad
+      \min_{\theta}\ \frac{1}{N}\sum_{i=1}^{N}\big\|\mathcal{G}_\theta(u_i)-\mathcal{G}^\dagger(u_i)\big\|_{\mathcal{V}}^2$$
+    keys:
+      - "<b>Kernel Neural Operators (KNOs)</b>: replace dense integral kernels with compact, parametrized kernels and quadrature for scalable, geometry-flexible learning."
+      - "<b>Multiscale kernel frames</b> and <b>partition-of-unity mixtures of experts</b> that localize operators in space and scale."
+      - "<b>Ensemble / MoE DeepONets</b>, <b>optimal weighted least squares</b>, and <b>deep Gaussian processes</b> for functional maps with quantified uncertainty."
+      - "Applications to continuum robots, composite structures, and incompressible flows."
+    papers:
+      - The Frame Kernel Method
+      - Kernel Neural Operators
+      - Localized Operator Learning with Adaptive
+      - Ensemble and Mixture-of-Experts
+      - An Optimal Weighted Least-Squares
+      - Deep Gaussian Processes for Functional Maps
+      - Neural Operators for Design-Space
+
+  - id: trustworthy
+    tag: physics-informed
+    title: Trustworthy, Property-Preserving SciML
+    short: Models that respect physics by construction, with guarantees on accuracy, stability, and correctness.
+    body: >-
+      Scientific users need more than low test error. We build architectures that preserve
+      conservation laws and constraints exactly, that come with approximation guarantees,
+      and that remain correct under compression, reduced precision, and real software stacks.
+    math: |-
+      $$\nabla\!\cdot\mathbf{u}_\theta \equiv 0\ \text{ by construction},\qquad
+      u_\theta(x)=\underbrace{\textstyle\sum_{|\alpha|\le \ell} c_\alpha\,P_\alpha(x)}_{\text{polynomial}}
+      +\underbrace{\mathcal{N}_\theta(x)}_{\text{network}},\ \ \langle \mathcal{N}_\theta, P_\alpha\rangle\approx 0$$
+    keys:
+      - "<b>Property-preserving operator learning</b> for incompressible flows (divergence-free surrogates)."
+      - "<b>Polynomial-augmented networks (PANNs)</b> with weak orthogonality constraints, <b>HyResPINNs</b>, and <b>Fourier PINNs</b> that balance expressiveness and trainability."
+      - "<b>Certifiable, compression-aware SciML systems</b> (NSF SHF) and <b>correct scientific software</b> via program synthesis (NSF/DOE CS2)."
+    papers:
+      - "Fluids You Can Trust"
+      - Polynomial-Augmented Neural Networks
+      - "HyResPINNs"
+      - "Fourier PINNs"
+      - Accelerated training of physics-informed
+
+  - id: meshless
+    tag: meshless
+    title: Kernel & Meshless Numerical Methods
+    short: High-order RBF-FD and kernel methods for PDEs on irregular domains, surfaces, and moving manifolds.
+    body: >-
+      Our numerics roots are in radial basis function (RBF) and kernel methods. Meshless
+      discretizations need only scattered nodes, which makes them a natural fit for complex
+      and evolving geometry, and for coupling with learned models. We develop stable,
+      high-order, scalable schemes and the node-generation and solver machinery around them.
+    math: |-
+      $$\mathcal{L}u(\mathbf{x}_c)\;\approx\;\sum_{j=1}^{n} w_j\,u(\mathbf{x}_j),\qquad
+      \begin{bmatrix} A & P\\ P^{\!\top} & 0\end{bmatrix}
+      \begin{bmatrix}\mathbf{w}\\ \boldsymbol{\lambda}\end{bmatrix}
+      =\begin{bmatrix}\mathcal{L}\phi(\|\mathbf{x}-\mathbf{x}_j\|)\big|_{\mathbf{x}_c}\\ \mathcal{L}P\big|_{\mathbf{x}_c}\end{bmatrix}$$
+    keys:
+      - "<b>RBF-FD</b> for advection–diffusion–reaction on manifolds, time-varying domains, and moving surfaces (Lagrangian–Eulerian)."
+      - "<b>Stabilization</b> via hyperviscosity, <b>overlapped RBF-FD</b>, and semi-Lagrangian transport."
+      - "<b>Meshfree multilevel solvers (MGM)</b>, robust node generation, and meshless isogeometric analysis on NURBS."
+      - "A <b>unified framework</b> for efficient kernel and polynomial interpolation."
+    papers:
+      - A high-order, meshless, Lagrangian
+      - A Unified Framework for Efficient Kernel
+      - "MGM:"
+      - An efficient high-order meshless method
+      - A Robust Hyperviscosity Formulation
+      - The Overlapped Radial Basis Function
+
+  - id: applications
+    tag: mechanics
+    title: Digital Twins for Engineering & Biology
+    short: Coupling numerics, learning, and HPC for composites, fluids, robotics, and biomechanics.
+    body: >-
+      We partner with domain scientists and national labs to put these tools to work:
+      process-to-performance modeling of textile composites and progressive fracture with the
+      Air Force Research Laboratory, surrogate-driven design of continuum robots, and
+      fluid–structure models of blood clotting and lymphatic pumping, all on modern parallel hardware.
+    math: ""
+    keys:
+      - "<b>Composites & fracture</b>: CG-XFEM with hierarchical enrichments; nonlinear solvers for cohesive-zone models."
+      - "<b>Robotics</b>: neural-operator design-space surrogates for tendon-actuated continuum robots."
+      - "<b>Biofluids</b>: immersed-boundary simulation of platelets, whole blood, and lymphangion pumping."
+      - "<b>HPC</b>: fine-grained parallel immersed-boundary methods; HPC pipelines for textile composites."
+    papers:
+      - Rootfinding and Optimization Techniques
+      - Towards an Extrinsic, CG-XFEM
+      - Remaining Challenges in the Application
+      - Immersed boundary simulations of cell-cell
+      - A fine-grained parallelization
+      - Pump efficacy

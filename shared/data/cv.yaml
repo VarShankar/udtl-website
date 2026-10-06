@@ -1,0 +1,75 @@
+# CV sections rendered on the personal site. Source: VarunShankar-cv.tex
+positions:
+  - {what: "Assistant Professor, Kahlert School of Computing, University of Utah", when: "2023 – present"}
+  - {what: "Associate Chair, FinTech Center, University of Utah", when: "2023 – present"}
+  - {what: "Adjunct Graduate Faculty, Dept. of Mathematics, Boise State University", when: "2019 – present"}
+  - {what: "Advisor, Light-Hope Diagnostics, Inc.", when: "2026 – present"}
+  - {what: "Associate Director, Master of Software Development, University of Utah", when: "2022 – 2026"}
+  - {what: "Assistant Professor (Lecturer), Kahlert School of Computing, University of Utah", when: "2018 – 2023"}
+  - {what: "Postdoctoral Researcher, Dept. of Mathematics, University of Utah", when: "2014 – 2018"}
+
+education:
+  - {what: "PhD in Computing (Scientific Computing), University of Utah", when: "2014"}
+  - {what: "Visiting Scholar, UC Davis Global Study Program", when: "2009"}
+  - {what: "B.Tech., Computer Science and Engineering, SRM University", when: "2009"}
+
+awards:
+  - College of Engineering Dean's Teaching Recognition (2020–21, 2021–22, 2022–23)
+  - Nominated, School of Computing Outstanding Teacher Award (2022)
+  - NSF Travel Award, PNWNAS (2012)
+
+service_highlights:
+  - "Editor, <em>Nature Scientific Reports</em> (2026 – present)"
+  - "Member, University Technology Commercialization Advisory Committee (2026 – present)"
+  - "Faculty Coordinator for Web & Social Media Engagement, Kahlert School of Computing (2026 – present)"
+  - "Director, Scientific Computing Track, Kahlert School of Computing (2023 – present)"
+  - "Local Arrangements Chair, International Conference on Supercomputing (ICS 2025)"
+  - "Reviewer: NeurIPS, ICLR, SISC, JCP, IJNME, J. Sci. Comput., and others"
+
+minisymposia:
+  - {title: "Meshless Numerical Methods and Scientific Machine Learning with Kernels and Gaussian Processes", where: "ICOSAHOM 2027", with: "Oleg Davydov"}
+  - {title: "Automatic Differentiation for Scientific Computing", where: "SIAM CSE 2027", with: "Nathan Willis"}
+  - {title: "Kernel Methods for PDEs and ML", where: "SIAM MDS 2026", with: "Grady B. Wright"}
+  - {title: "Panel: Kernel approximation and GP software — libraries, workflows, best practices (Chair)", where: "Banff Workshop, 2026"}
+  - {title: "Recent Advances in Kernel-based Meshless Methods", where: "Approximation Theory 16, 2019", with: "Grady B. Wright"}
+  - {title: "Advances in RBF and Other Meshfree Methods", where: "SIAM CSE 2015", with: "Grady B. Wright"}
+
+talks:
+  - {title: "Interpretable Multiscale Operator Learning with Multiscale Kernel Frames", where: "Banff Workshop on Kernel Approximation and Gaussian Processes", when: "Sep 2026", invited: true}
+  - {title: "Multiscale Operator Learning with Multiscale Kernel Frames", where: "WCCM-ECCOMAS", when: "Jul 2026", invited: true}
+  - {title: "Property-Preserving and Multiscale Operator Learning for Surrogate Modeling", where: "Air Force Research Laboratory", when: "Jun 2026", invited: true}
+  - {title: "Property-Preserving and Multiscale Operator Learning for Surrogate Modeling", where: "AFOSR PI Meeting", when: "Dec 2025"}
+  - {title: "Kernels in Numerical Methods and Operator Learning", where: "Caltech CMX Seminar", when: "Apr 2025", invited: true}
+  - {title: "Kernel Methods for Operator Learning", where: "SIAM CSE 2025", when: "Mar 2025", invited: true}
+  - {title: "Kernel Methods for Operator Learning", where: "Colorado School of Mines, Applied Math Seminar", when: "Dec 2024", invited: true}
+  - {title: "Physics-informed neural networks (PINNs) and kernel methods", where: "SIAM CSE 2023", when: "Feb 2023", invited: true}
+  - {title: "Accelerated training of PINNs using meshless discretizations", where: "NeurIPS 2022", when: "Dec 2022"}
+  - {title: "Accelerated training of PINNs using meshless discretizations", where: "CRUNCH Seminar, Brown University", when: "Aug 2022", invited: true}
+  - {title: "A High-Order Meshless Semi-Lagrangian Method for PDEs on Surfaces", where: "Dolomites Workshop on Constructive Approximation", when: "Sep 2021", invited: true}
+  - {title: "Stacked surface representations for Geometric Modeling and Node Generation", where: "SIAM Conference on Geometric and Physical Modeling", when: "Sep 2021", invited: true}
+  - {title: "KernelPack: A C/C++ library for high-order RBF-FD methods and automatic node generation", where: "ICERM Workshop, Brown University", when: "Aug 2017", invited: true}
+
+teaching:
+  - {code: "CS 4150", name: "Algorithms", when: "Fall 2025"}
+  - {code: "CS 6220 / COMP 5960", name: "Advanced Scientific and Data Computing II", when: "Spring 2024"}
+  - {code: "CS 4530", name: "Mobile Application Programming", when: "2022 – 2024"}
+  - {code: "CS 6010", name: "MSD: Introduction to Software Development", when: "2022 – 2023"}
+  - {code: "CS 6013", name: "MSD: Systems I (incl. GPU & multicore programming)", when: "2020 – 2023"}
+  - {code: "CS 6011", name: "MSD: Computer Programming", when: "Fall 2022"}
+  - {code: "CS 6012", name: "MSD: Data Structures and Algorithms", when: "2018 – 2021"}
+  - {code: "CS 6018", name: "MSD: Application System Design (course designer)", when: "2018 – 2021"}
+  - {code: "CS 6016", name: "MSD: Database Systems", when: "2019 – 2020"}
+  - {code: "CS 3200", name: "Introduction to Scientific and Data Computing", when: "Spring 2019"}
+  - {code: "Math 5620/6865", name: "Numerical Analysis II", when: "2016 – 2017"}
+  - {code: "Math 3140", name: "Vector Calculus and PDEs for Engineers", when: "Fall 2015"}
+  - {code: "Math 2250", name: "Differential Equations and Linear Algebra", when: "2015 – 2016"}
+  - {code: "Math 1320", name: "Engineering Calculus II", when: "Fall 2014"}
+
+news:
+  - {date: "2026-09", text: "Varun gave an invited talk on multiscale kernel frames for operator learning at the Banff Workshop on Kernel Approximation and Gaussian Processes, and chaired its panel on kernel/GP software."}
+  - {date: "2026-09", text: "Varun joined the editorial board of <em>Nature Scientific Reports</em>."}
+  - {date: "2026-05", text: "New NSF/DOE CS2 award (with Ben Greenman and John Regehr): on-demand semantic analysis via program synthesis."}
+  - {date: "2026", text: "Kernel Neural Operators (KNOs) published in <em>TMLR</em>; PANNs published in <em>SISC</em>."}
+  - {date: "2026", text: "Neural-operator surrogates for tendon-actuated continuum robots at <em>ICRA 2026</em> (with Alan Kuntz's group)."}
+  - {date: "2025-09", text: "New NSF award (PI): Unified Neural Operator (UNO) — towards trustworthy operator learning for scientific applications."}
+  - {date: "2025", text: "Congratulations to Dr. Madison Cooley on completing her PhD!"}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Join — Utah Digital Twin Lab{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Join us</span>
+    <h1>Working with the lab</h1>
+    {% if site.recruiting %}
+    <div class="callout"><p><b>We are taking on new students.</b> Current University of Utah students (PhD, MS, and undergraduate) are especially encouraged to reach out. We look for strong backgrounds in applied mathematics, numerical analysis, machine learning, or scientific computing.</p></div>
+    {% else %}
+    <div class="callout"><p>We are <b>not recruiting new PhD students</b> at this time. This page will be updated when positions open.</p></div>
+    {% endif %}
+  </div>
+</section>
+<section class="wrap split" style="padding-bottom:4rem">
+  <div class="prose">
+    <h2 style="font-size:var(--step-2)">What we look for</h2>
+    <p>Students who do well here like both the mathematics and the code. Typical backgrounds include numerical analysis and PDEs, approximation theory, machine learning, and scientific or high performance computing. You don't need all of them, but you should want to learn the rest.</p>
+    <h2 style="font-size:var(--step-2);margin-top:2rem">How to reach out</h2>
+    <ul>
+      <li><b>Prospective PhD students:</b> apply to the <a href="https://www.cs.utah.edu/graduate/">Kahlert School of Computing PhD program</a> and name Prof. Shankar in your application. The Scientific Computing track is a natural fit.</li>
+      <li><b>Current Utah students (BS/MS):</b> email a CV, transcript, and a short note about which of our <a href="research.html">research thrusts</a> interests you, and why.</li>
+      <li><b>Postdocs and visitors:</b> email with a CV and a brief research statement.</li>
+    </ul>
+  </div>
+  <div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p class="muted">Varun Shankar<br>Kahlert School of Computing, University of Utah<br>WEB 2891, 72 S. Central Campus Drive<br>Salt Lake City, UT 84112</p>
+      <a class="btn primary" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

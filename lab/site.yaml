@@ -1,0 +1,30 @@
+id: lab
+title: Utah Digital Twin Lab (UDTL)
+description: The Utah Digital Twin Lab develops provably-accurate, scalable scientific machine learning architectures to aid the creation of digital twins for scientific discovery and engineering.
+base_url: https://varunshankar.com/
+brand: Utah Digital Twin Lab
+brand_sub: UDTL · University of Utah
+copyright: Utah Digital Twin Lab, University of Utah
+pi_url: https://users.cs.utah.edu/~shankar/
+email: shankar@cs.utah.edu
+recruiting: true     # false hides the "taking students" banner on Join
+nav:
+  - {label: Home, href: index.html}
+  - {label: Research, href: research.html}
+  - {label: Funding, href: funding.html}
+  - {label: People, href: people.html}
+  - {label: Publications, href: publications.html}
+  - {label: Join, href: join.html}
+footer: 'Kahlert School of Computing · <a href="https://www.utah.edu/">University of Utah</a> · Salt Lake City, UT'
+footer_links:
+  - {label: PI homepage, href: "https://users.cs.utah.edu/~shankar/"}
+  - {label: Contact, href: "mailto:shankar@cs.utah.edu"}
+  - {label: Google Scholar, href: "https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en"}
+jsonld:
+  "@context": https://schema.org
+  "@type": ResearchOrganization
+  name: Utah Digital Twin Lab
+  alternateName: UDTL
+  url: https://varunshankar.com/
+  parentOrganization: {"@type": CollegeOrUniversity, name: University of Utah}
+  founder: {"@type": Person, name: Varun Shankar}

@@ -1,0 +1,74 @@
+{% macro pub_links(p) -%}
+<div class="links">
+  {% if p.arxiv %}<a class="pill" href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+  {% if p.doi %}<a class="pill" href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+  {% if p.url %}<a class="pill" href="{{ p.url }}">{{ 'OpenReview' if 'openreview' in p.url else 'Paper' }}</a>{% endif %}
+  {% if p.code %}<a class="pill" href="{{ p.code }}">Code</a>{% endif %}
+  {% if p.status == 'review' %}<span class="pill accent">In review</span>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro pub_item(p) -%}
+<li class="pub" id="{{ p.id }}" data-tags="{{ p.tags | join(' ') }}" data-year="{{ 'review' if p.status == 'review' else p.year }}">
+  <span class="t">{{ p.title }}</span>
+  <span class="a">{{ p.authors_html | safe }}</span>
+  {% if p.status != 'review' %}<span class="v">{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}</span>{% endif %}
+  {{ pub_links(p) }}
+</li>
+{%- endmacro %}
+
+{% macro pub_mini(p) -%}
+<li>{% if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">{{ p.title }}</a>{% elif p.doi %}<a href="https://doi.org/{{ p.doi }}">{{ p.title }}</a>{% elif p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+  <span class="v">{% if p.status == 'review' %}Preprint, {{ p.year }}{% else %}{{ p.venue }}, {{ p.year }}{% endif %}</span></li>
+{%- endmacro %}
+
+{% macro pub_browser(d) -%}
+<div class="pub-tools">
+  <div class="chips" role="toolbar" aria-label="Filter by topic">
+    <button class="chip" type="button" data-tag="all" aria-pressed="true">All<span class="n">{{ d.publications.publications | length }}</span></button>
+    {% for key, label, n in d.pub_tags %}
+    <button class="chip" type="button" data-tag="{{ key }}" aria-pressed="false">{{ label }}<span class="n">{{ n }}</span></button>
+    {% endfor %}
+  </div>
+  <label class="search"><span class="visually-hidden">Search publications</span>
+    <input id="pub-q" type="search" placeholder="Search titles, authors, venues…" autocomplete="off">
+    <span class="count" id="pub-count" aria-live="polite"></span>
+  </label>
+</div>
+<p class="legend"><b>Bold</b>: Varun Shankar · <u>Underlined</u>: lab members (current and former students)</p>
+<div data-pubs>
+{% for yr, items in d.pubs_by_year %}
+  <h3 class="pub-year" data-year="{{ 'review' if yr == 'In review' else yr }}">{{ yr }}</h3>
+  <ol class="pubs">
+  {% for p in items %}{{ pub_item(p) }}{% endfor %}
+  </ol>
+{% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro grant_card(g, show_amounts) -%}
+<article class="card grant">
+  <div class="top">
+    <span class="sponsor">{{ g.sponsor }}</span>
+    <span class="pill{{ ' accent' if g.role == 'PI' }}">{{ g.role }}</span>
+    {% if g.award and g.url %}<a class="pill" href="{{ g.url }}">Award #{{ g.award }}</a>{% elif g.award %}<span class="pill">{{ g.award }}</span>{% endif %}
+  </div>
+  <h3>{{ g.title }}</h3>
+  <p class="prog">{{ g.program }}{% if g.team %} · {{ g.team }}{% endif %}</p>
+  <div>
+    <div class="bar" aria-hidden="true"><i data-start="{{ g.start }}" data-end="{{ g.end }}" data-start-month="{{ g.start_month or 0 }}" data-end-month="{{ g.end_month or 0 }}"></i></div>
+  </div>
+  <div class="meta"><span>{{ g.start }} – {{ g.end }}</span>{% if show_amounts and g.amount %}<span>{{ g.amount }}</span>{% endif %}</div>
+</article>
+{%- endmacro %}
+
+{% macro person(p) -%}
+<div class="card person">
+  <div class="avatar">{% if p.photo | exists %}<img src="{{ p.photo }}" alt="" loading="lazy">{% else %}{{ p.name | initials }}{% endif %}</div>
+  <div>
+    <h3>{% if p.url %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+    <p>{{ p.role }}{% if p.advisors %} · {{ p.advisors }}{% endif %}</p>
+    {% if p.topics %}<p>{{ p.topics }}</p>{% endif %}
+  </div>
+</div>
+{%- endmacro %}

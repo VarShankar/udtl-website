@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% set math = true %}
+{% block title %}Research — Varun Shankar{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Research</span>
+    <h1>Scientific ML you can trust, built on solid numerics</h1>
+    <p class="lede">Digital twins need models that are fast enough to query in a loop and accurate enough to make decisions with. My group works on four connected problems. Group pages, people, and funding are on the <a href="{{ site.lab_url }}">Utah Digital Twin Lab</a> site.</p>
+    <div class="toc">{% for t in d.research.thrusts %}<a class="pill" href="#{{ t.id }}">{{ t.title }}</a>{% endfor %}</div>
+  </div>
+</section>
+<div class="wrap">
+{% for t in d.research.thrusts %}
+  <section class="thrust" id="{{ t.id }}">
+    <div class="split">
+      <div>
+        <span class="eyebrow">0{{ loop.index }}</span>
+        <h2 style="font-size:var(--step-2)">{{ t.title }}</h2>
+        <p>{{ t.body | safe }}</p>
+        {% if t.math %}<div class="math">{{ t.math }}</div>{% endif %}
+        <ul class="keys">{% for k in t['keys'] %}<li>{{ k | safe }}</li>{% endfor %}</ul>
+      </div>
+      <aside>
+        <h4>Selected papers</h4>
+        <ul class="mini-list">{% for p in t.paper_objs %}{{ m.pub_mini(p) }}{% endfor %}</ul>
+        <a class="btn" href="publications.html#{{ t.tag }}">All papers in this area →</a>
+      </aside>
+    </div>
+  </section>
+{% endfor %}
+</div>
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <h2 style="font-size:var(--step-2)">Collaborators</h2>
+    <p class="prose muted">{{ d.people.collaborators | join(' · ') }}</p>
+  </div>
+</section>
+{% endblock %}

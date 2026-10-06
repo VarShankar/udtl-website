@@ -1,0 +1,36 @@
+id: personal
+title: Varun Shankar — University of Utah
+description: Varun Shankar is an Assistant Professor in the Kahlert School of Computing at the University of Utah, working on scientific machine learning, kernel and meshless numerical methods, and high performance computing.
+base_url: https://users.cs.utah.edu/~shankar/
+brand: Varun Shankar
+brand_sub: Kahlert School of Computing
+copyright: Varun Shankar
+lab_url: https://varunshankar.com/
+scholar: https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en
+cv_pdf: VarunShankar-cv.pdf
+email: shankar@cs.utah.edu
+office: WEB 2891, 72 S. Central Campus Drive, Salt Lake City, UT 84112
+photo: images/varun.jpg       # drop the headshot here; initials are shown until then
+recruiting: true
+nav:
+  - {label: Home, href: index.html}
+  - {label: Research, href: research.html}
+  - {label: Publications, href: publications.html}
+  - {label: Teaching, href: teaching.html}
+  - {label: CV, href: cv.html}
+  - {label: Lab ↗, href: "https://varunshankar.com/"}
+footer: 'Kahlert School of Computing · <a href="https://www.utah.edu/">University of Utah</a>'
+footer_links:
+  - {label: Email, href: "mailto:shankar@cs.utah.edu"}
+  - {label: Google Scholar, href: "https://scholar.google.com/citations?user=goYJXTsAAAAJ&hl=en"}
+  - {label: Utah Digital Twin Lab, href: "https://varunshankar.com/"}
+  - {label: CV (PDF), href: VarunShankar-cv.pdf}
+jsonld:
+  "@context": https://schema.org
+  "@type": Person
+  name: Varun Shankar
+  jobTitle: Assistant Professor
+  affiliation: {"@type": CollegeOrUniversity, name: University of Utah}
+  email: mailto:shankar@cs.utah.edu
+  url: https://users.cs.utah.edu/~shankar/
+  sameAs: ["https://scholar.google.com/citations?user=goYJXTsAAAAJ", "https://varunshankar.com/"]

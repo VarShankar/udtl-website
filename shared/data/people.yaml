@@ -1,0 +1,87 @@
+# Lab members. Add `photo: images/people/<file>.jpg` to show a headshot (otherwise initials are shown).
+pi:
+  name: Varun Shankar
+  role: Principal Investigator
+  title: Assistant Professor, Kahlert School of Computing
+  email: shankar@cs.utah.edu
+  url: https://users.cs.utah.edu/~shankar/
+  photo: images/varun.jpg
+
+postdocs:
+  - name: Nathan Willis
+    role: Postdoctoral Researcher
+
+phd:
+  - name: Ramansh Sharma
+    role: PhD student, Kahlert School of Computing
+    topics: Operator learning, property-preserving surrogates
+  - name: Matthew Lowery
+    role: PhD student, Kahlert School of Computing
+    advisors: co-advised with Shandian Zhe
+    topics: Kernel neural operators, meshless methods
+  - name: Branden Frieden
+    role: PhD student, Kahlert School of Computing
+    topics: Multiscale operator learning, surrogate modeling
+  - name: Alberto Cattaneo
+    role: PhD student, Kahlert School of Computing
+    topics: Nonlinear solvers, computational mechanics
+  - name: Andrey Pluzhnik
+    role: PhD student, Kahlert School of Computing
+
+alumni:
+  - name: Dr. Madison Cooley
+    degree: PhD, Kahlert School of Computing / SCI, 2025
+    advisors: co-advised with Robert M. Kirby
+  - name: Milena Belianovich
+    degree: MS, Kahlert School of Computing, 2025
+  - name: Dr. Andrew Jones
+    degree: PhD, Mathematics, Boise State University, 2024
+    advisors: co-advised with Grady B. Wright
+    now: Sandia National Laboratories
+  - name: Dr. Andrew Kassen
+    degree: PhD, Mathematics, University of Utah, 2021
+    advisors: co-advised with Aaron L. Fogelson
+    now: Intel
+  - name: Dr. Hallie Elich
+    degree: PhD, Mathematics, University of Utah, 2021
+    advisors: co-advised with Aaron L. Fogelson
+    now: L3Harris
+  - name: Dr. Vidhi Zala
+    degree: MS, School of Computing
+    advisors: co-advised with Robert M. Kirby
+    now: Intel
+  - name: Sage Shaw
+    degree: MS, Mathematics, Boise State University
+    advisors: co-advised with Grady B. Wright
+    now: CU Boulder (PhD)
+  - name: Daniel Malmuth
+    degree: MS, Mathematics, Boise State University
+    advisors: co-advised with Grady B. Wright
+  - name: M.S. Srivatsa
+    degree: MS, Computer Science, University of Utah
+    advisors: co-advised with Robert M. Kirby
+    now: Microsoft
+  - name: Harshitha Parnandi
+    degree: MS, Computer Science, University of Utah
+    advisors: co-advised with Robert M. Kirby
+  - name: Roman Amici
+    degree: MS, Kahlert School of Computing
+    advisors: co-advised with Robert M. Kirby
+  - name: Zixuan Zhao
+    degree: MSD, Kahlert School of Computing (research assistant)
+  - name: Hannah Bruns
+    degree: Undergraduate thesis, School of Computing (UROP award)
+    now: BioFire
+
+collaborators:
+  - Robert M. Kirby (Utah)
+  - Shandian Zhe (Utah)
+  - Akil Narayan (Utah)
+  - Ganesh Gopalakrishnan (Utah)
+  - Alan Kuntz (Utah)
+  - Grady B. Wright (Boise State)
+  - Aaron L. Fogelson (Utah)
+  - Houman Owhadi (Caltech)
+  - John D. Jakeman (Sandia)
+  - Keith Ballard (AFRL)
+  - Gregory E. Fasshauer (Colorado School of Mines)

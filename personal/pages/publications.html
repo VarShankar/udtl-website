@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}Publications — Varun Shankar{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Publications</span>
+    <h1>Papers and preprints</h1>
+    <p class="lede">Filter by topic or search. The complete record is on <a href="{{ site.scholar }}">Google Scholar</a>.</p>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom:4rem">
+  {{ m.pub_browser(d) }}
+</section>
+{% endblock %}

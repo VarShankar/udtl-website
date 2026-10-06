@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Teaching — Varun Shankar{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Teaching</span>
+    <h1>Teaching and curriculum</h1>
+    <p class="lede">I have taught numerical analysis, scientific computing, algorithms, and systems, and from 2018 to 2026 I helped build the Master of Software Development (MSD) program.</p>
+  </div>
+</section>
+<section class="wrap split" style="padding-bottom:4rem">
+  <div>
+    <h2 style="font-size:var(--step-2)">Courses</h2>
+    <ul class="tl">
+    {% for c in d.cv.teaching %}
+      <li><span class="when">{{ c.when }}</span><span><b>{{ c.code }}</b> · {{ c.name }}</span></li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2 style="font-size:var(--step-2)">Course design</h2>
+    <div class="card prose">
+      <p><b>CS 6018, Application System Design.</b> I designed the capstone course of the MSD program. It uses Android development to teach software design and engineering, and moved from Java to Kotlin in 2022. I co-maintain it, and CS 4530, with Prof. Ben Jones.</p>
+      <p><b>CS 6013, Systems I.</b> In 2020–21 I added GPU and multicore programming to the course.</p>
+      <p><b>Numerical analysis.</b> For Math 5620/6865 I wrote a unified treatment of the numerical analysis of ODEs and PDEs, along with my own typeset notes. I later adapted it, with numerical linear algebra and data-science methods added, for CS 3200 and CS 6220 / COMP 5960.</p>
+    </div>
+    <h2 style="font-size:var(--step-2);margin-top:2rem">Recognition</h2>
+    <ul class="tl">
+      {% for a in d.cv.awards[:2] %}<li><span>{{ a }}</span></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-site="{{ site.id }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:type" content="website">
+{% if site.base_url %}<link rel="canonical" href="{{ site.base_url }}{{ '' if page == 'index' else page ~ '.html' }}">
+<meta property="og:url" content="{{ site.base_url }}{{ '' if page == 'index' else page ~ '.html' }}">{% endif %}
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+{% if math %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false})"></script>
+{% endif %}
+{% if site.analytics %}{{ site.analytics | safe }}{% endif %}
+<script type="application/ld+json">{{ site.jsonld | tojson }}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="{{ site.title }} — home">
+      {% include "_mark.html" %}
+      <span>{{ site.brand }}<small>{{ site.brand_sub }}</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+      {% for item in site.nav %}
+        <li><a href="{{ item.href }}"{% if item.href == page ~ '.html' %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" type="button" data-menu aria-expanded="false" aria-controls="drawer" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="drawer" id="drawer">
+    <div class="wrap">
+      <ul>
+      {% for item in site.nav %}
+        <li><a href="{{ item.href }}"{% if item.href == page ~ '.html' %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="row">
+      <span>{{ site.footer | safe }}</span>
+      <ul>
+      {% for l in site.footer_links %}<li><a href="{{ l.href }}">{{ l.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div class="row"><span>© {{ year }} {{ site.copyright }} · Last updated {{ built }}</span></div>
+  </div>
+</footer>
+<script src="js/site.js" defer></script>
+</body>
+</html>

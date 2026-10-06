@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}CV — Varun Shankar{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Curriculum vitae</span>
+    <h1>CV at a glance</h1>
+    <div class="btn-row"><a class="btn primary" href="{{ site.cv_pdf }}">Download full CV (PDF)</a></div>
+  </div>
+</section>
+<div class="wrap" style="padding-bottom:4rem">
+  <div class="split">
+    <section>
+      <h2 style="font-size:var(--step-2)">Appointments</h2>
+      <ul class="tl">{% for p in d.cv.positions %}<li><span class="when">{{ p.when }}</span><span>{{ p.what }}</span></li>{% endfor %}</ul>
+      <h2 style="font-size:var(--step-2);margin-top:2.5rem">Education</h2>
+      <ul class="tl">{% for p in d.cv.education %}<li><span class="when">{{ p.when }}</span><span>{{ p.what }}</span></li>{% endfor %}</ul>
+    </section>
+    <section>
+      <h2 style="font-size:var(--step-2)">Service</h2>
+      <ul class="tl">{% for s in d.cv.service_highlights %}<li><span>{{ s | safe }}</span></li>{% endfor %}</ul>
+      <h2 style="font-size:var(--step-2);margin-top:2.5rem">Honors</h2>
+      <ul class="tl">{% for a in d.cv.awards %}<li><span>{{ a }}</span></li>{% endfor %}</ul>
+    </section>
+  </div>
+
+  <section style="margin-top:3.5rem">
+    <div class="section-head"><h2 style="font-size:var(--step-2)">Active research support</h2><a href="{{ site.lab_url }}funding.html">On the lab site →</a></div>
+    <div class="grid" style="--min:300px">{% for g in d.active_grants %}{{ m.grant_card(g, d.grants.show_amounts) }}{% endfor %}</div>
+  </section>
+
+  <div class="split" style="margin-top:3.5rem">
+    <section>
+      <h2 style="font-size:var(--step-2)">Selected talks</h2>
+      <ul class="tl">{% for t in d.cv.talks %}<li><span class="when">{{ t.when }}</span><span>“{{ t.title }}”<br><span class="muted">{{ t.where }}{% if t.invited %} · invited{% endif %}</span></span></li>{% endfor %}</ul>
+    </section>
+    <section>
+      <h2 style="font-size:var(--step-2)">Minisymposia & panels organized</h2>
+      <ul class="tl">{% for t in d.cv.minisymposia %}<li><span>{{ t.title }}<br><span class="muted">{{ t.where }}{% if t.with %} · with {{ t.with }}{% endif %}</span></span></li>{% endfor %}</ul>
+      <h2 style="font-size:var(--step-2);margin-top:2.5rem">Advising</h2>
+      <p class="muted">Current PhD students: {% for p in d.people.phd %}{{ p.name }}{{ ', ' if not loop.last }}{% endfor %}.</p>
+      <p class="muted">Graduated mentees: {% for p in d.people.alumni %}{{ p.name }}{{ ', ' if not loop.last }}{% endfor %}.</p>
+    </section>
+  </div>
+</div>
+{% endblock %}
