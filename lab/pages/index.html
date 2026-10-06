@@ -45,6 +45,21 @@
   </div>
 </section>
 
+<section class="section director">
+  <div class="wrap">
+    {% set pi = d.people.pi %}
+    <div class="director-card">
+      <a class="director-photo" href="{{ pi.url }}">{% if pi.photo | exists %}<img src="{{ pi.photo }}" alt="Varun Shankar" loading="lazy">{% else %}<span>{{ pi.name | initials }}</span>{% endif %}</a>
+      <div>
+        <span class="eyebrow">Lab director</span>
+        <h2>{{ pi.name }}</h2>
+        <p class="lede-sm">{{ pi.title }}, University of Utah. Varun works on scientific machine learning, kernel and meshless numerical methods, and high performance computing. He received his PhD in Computing from Utah and was a postdoc in Utah's Department of Mathematics.</p>
+        <div class="btn-row"><a class="btn primary" href="{{ pi.url }}">Personal homepage</a><a class="btn" href="people.html">Meet the team</a><a class="btn" href="mailto:{{ pi.email }}">Email</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="background:var(--paper-2)">
   <div class="wrap">
     <div class="section-head">
@@ -69,7 +84,7 @@
     <div>
       <div class="section-head"><h2>News</h2></div>
       <ul class="tl news">
-      {% for n in d.cv.news %}<li><span class="when">{{ n.date }}</span><span>{{ n.text | safe }}</span></li>{% endfor %}
+      {% for n in d.cv.news %}<li><span class="when">{{ n.date | nicedate }}</span><span>{{ n.text | safe }}</span></li>{% endfor %}
       </ul>
     </div>
   </div>
