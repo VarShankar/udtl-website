@@ -20,11 +20,13 @@ phd:
     topics: Operator learning, property-preserving surrogates
   - name: Matthew Lowery
     role: PhD student, Kahlert School of Computing
+    photo: images/people/matthew-lowery.jpg
     url: https://matthew-lowery.github.io/
     advisors: co-advised with Shandian Zhe
     topics: Kernel neural operators, meshless methods
   - name: Branden Frieden
     role: PhD student, Kahlert School of Computing
+    photo: images/people/branden-frieden.jpg
     topics: Multiscale operator learning, surrogate modeling
   - name: Alberto Cattaneo
     role: PhD student, Kahlert School of Computing
