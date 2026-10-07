@@ -1,0 +1,47 @@
+# Research-areas bubble chart (lab home + both Research pages).
+# Add/remove a line to change the figure; it re-lays itself out on every build.
+# size: relative importance (bubble area scales with it). Use \n to force a line break.
+groups:
+  - {id: sciml,  label: "Scientific machine learning", color: "#0b8a96"}
+  - {id: num,    label: "Numerical methods",           color: "#c2410c"}
+  - {id: hpc,    label: "HPC & trustworthy systems",   color: "#6d4fc2"}
+  - {id: health, label: "Health & medicine",           color: "#be185d"}
+  - {id: eng,    label: "Engineering",                 color: "#1d4ed8"}
+
+core: "Digital\ntwins"
+
+bubbles:
+  # scientific ML
+  - {label: "Operator\nlearning",            group: sciml, size: 10}
+  - {label: "Kernel neural\noperators",      group: sciml, size: 6}
+  - {label: "Multiscale\nkernel frames",     group: sciml, size: 5}
+  - {label: "Mixture-of-\nexperts",          group: sciml, size: 3.5}
+  - {label: "Gaussian\nprocesses",           group: sciml, size: 4}
+  - {label: "PINNs &\nPANNs",                group: sciml, size: 5}
+  - {label: "Property-\npreserving ML",      group: sciml, size: 5}
+  - {label: "Surrogate\nmodeling",           group: sciml, size: 6}
+  # numerics
+  - {label: "RBF-FD",                        group: num, size: 7}
+  - {label: "Meshless\nmethods",             group: num, size: 8}
+  - {label: "PDEs on\nmanifolds",            group: num, size: 5}
+  - {label: "Moving\ndomains",               group: num, size: 3.5}
+  - {label: "Kernel\napproximation",         group: num, size: 5}
+  - {label: "Multilevel\nsolvers",           group: num, size: 3.5}
+  - {label: "Node\ngeneration",              group: num, size: 3}
+  - {label: "Stabilization",                 group: num, size: 3}
+  # HPC & systems
+  - {label: "High-\nperformance\ncomputing",  group: hpc, size: 7}
+  - {label: "GPU &\nmulticore",              group: hpc, size: 3.5}
+  - {label: "Compression-\naware SciML",     group: hpc, size: 4.5}
+  - {label: "Correct\nscientific\nsoftware", group: hpc, size: 4.5}
+  - {label: "Blockchain\ncompliance",        group: hpc, size: 3}
+  # health & medicine
+  - {label: "Cancer\ndetection",             group: health, size: 6}
+  - {label: "Tacrolimus\nmodeling",          group: health, size: 5.5}
+  - {label: "Blood clotting\n& platelets",   group: health, size: 5.5}
+  - {label: "Lymphatic\npumping",            group: health, size: 3}
+  # engineering
+  - {label: "Composites\n& fracture",        group: eng, size: 6}
+  - {label: "Continuum\nrobotics",           group: eng, size: 4.5}
+  - {label: "Incompressible\nflows",         group: eng, size: 5.5}
+  - {label: "Nonlinear\nsolvers",            group: eng, size: 3}
