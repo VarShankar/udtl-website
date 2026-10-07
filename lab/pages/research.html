@@ -11,6 +11,7 @@
     <div class="toc">{% for t in d.research.thrusts %}<a class="pill" href="#{{ t.id }}">{{ t.title }}</a>{% endfor %}</div>
   </div>
 </section>
+<section class="wrap" style="padding-bottom:2.5rem">{% include "_areas.html" %}</section>
 <div class="wrap" style="padding-bottom:3rem">
 {% for t in d.research.thrusts %}
   <section class="thrust" id="{{ t.id }}">
