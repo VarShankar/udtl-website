@@ -10,13 +10,16 @@ pi:
 postdocs:
   - name: Nathan Willis
     role: Postdoctoral Researcher
+    url: https://nathan-willis.github.io
 
 phd:
   - name: Ramansh Sharma
     role: PhD student, Kahlert School of Computing
+    url: https://rsmath.github.io/
     topics: Operator learning, property-preserving surrogates
   - name: Matthew Lowery
     role: PhD student, Kahlert School of Computing
+    url: https://matthew-lowery.github.io/
     advisors: co-advised with Shandian Zhe
     topics: Kernel neural operators, meshless methods
   - name: Branden Frieden
