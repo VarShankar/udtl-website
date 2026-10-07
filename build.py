@@ -14,6 +14,8 @@ under a sub-path such as users.cs.utah.edu/~shankar/ as well as a domain root.
 import datetime, html, re, shutil, sys
 from pathlib import Path
 import yaml
+sys.path.insert(0, str(Path(__file__).parent / "shared"))
+import bubbles
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).parent
@@ -112,7 +114,9 @@ def build(site):
     env.filters["nicedate"] = nicedate
     # an image reference is only emitted if the file is actually present
     env.filters["exists"] = lambda rel: bool(rel) and ((src / "static" / rel).exists() or (SHARED / "static" / rel).exists())
-    env.globals.update(site=cfg, d=data(), tag_labels=TAG_LABELS,
+    dd = data()
+    env.globals["areas_svg"] = bubbles.svg(dd["areas"]) if "areas" in dd else ""
+    env.globals.update(site=cfg, d=dd, tag_labels=TAG_LABELS,
                        year=datetime.date.today().year,
                        built=datetime.date.today().strftime("%B %Y"))
     for tpl in sorted((src / "pages").glob("*.html")):
