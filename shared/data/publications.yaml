@@ -73,6 +73,7 @@ publications:
   doi: null
   arxiv: '2407.00809'
   url: https://openreview.net/forum?id=Q0C4jYZQ7x
+  code: https://github.com/matthew-lowery/kernel_neural_operator
 - title: Polynomial-Augmented Neural Networks (PANNs) with Weak Orthogonality Constraints for Enhanced Function and PDE Approximation
   authors:
   - Madison Cooley
@@ -218,6 +219,7 @@ publications:
   doi: null
   arxiv: '2410.03573'
   url: https://openreview.net/forum?id=et9WkjkqAw
+  code: https://github.com/madicooley/HyResPINNs
 - title: 'Fourier PINNs: From Strong Boundary Conditions to Adaptive Fourier Bases'
   authors:
   - Madison Cooley
@@ -225,13 +227,14 @@ publications:
   - Robert M. Kirby
   - Shandian Zhe
   venue: Transactions on Machine Learning Research
-  year: 2024
+  year: 2025
   status: published
   tags:
   - physics-informed
   doi: null
   arxiv: '2410.03496'
   url: https://openreview.net/forum?id=KqRnsEMYLx
+  code: https://github.com/VarShankar/KernelPack/tree/sciml
 - title: Discretization of non-uniform rational B-spline (NURBS) models for meshless isogeometric analysis
   authors:
   - Urban Duh
