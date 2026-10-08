@@ -300,3 +300,4 @@ a.card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var
   .bubbles-list ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .35rem; }
   .bubbles-list li { font-size: .85rem; padding: .3rem .65rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-2); }
 }
+@media (min-width: 900px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
