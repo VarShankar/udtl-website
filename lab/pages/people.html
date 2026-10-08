@@ -26,7 +26,7 @@
   {% endif %}
 
   <h2 style="font-size:var(--step-2);margin-top:3rem">PhD students</h2>
-  <div class="grid" style="--min:280px">{% for p in d.people.phd %}{{ m.person(p) }}{% endfor %}</div>
+  <div class="grid grid-3" style="--min:280px">{% for p in d.people.phd %}{{ m.person(p) }}{% endfor %}</div>
 
   <h2 style="font-size:var(--step-2);margin-top:3rem">Collaborators</h2>
   <p class="prose muted">{{ d.people.collaborators | join(' · ') }}</p>
