@@ -11,6 +11,7 @@ postdocs:
   - name: Nathan Willis
     role: Postdoctoral Researcher
     url: https://nathan-willis.github.io
+    photo: images/people/nathan-willis.jpg
 
 phd:
   - name: Ramansh Sharma
@@ -24,13 +25,15 @@ phd:
     url: https://matthew-lowery.github.io/
     advisors: co-advised with Shandian Zhe
     topics: Kernel neural operators, meshless methods
+  - name: Alberto Cattaneo
+    role: PhD student, Kahlert School of Computing
+    url: https://cattaneo123.github.io/
+    photo: images/people/alberto-cattaneo.jpg
+    topics: Nonlinear solvers, computational mechanics
   - name: Branden Frieden
     role: PhD student, Kahlert School of Computing
     photo: images/people/branden-frieden.jpg
     topics: Multiscale operator learning, surrogate modeling
-  - name: Alberto Cattaneo
-    role: PhD student, Kahlert School of Computing
-    topics: Nonlinear solvers, computational mechanics
   - name: Andrey Pluzhnik
     role: PhD student, Kahlert School of Computing
 
